@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pribadi</title>
+    <style>
+        /* CSS disatukan di dalam file HTML */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        article {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        article section {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        article h2 {
+            margin-top: 0;
+        }
+
+        article img {
+            width: 500px; /* Ukuran gambar sama dengan yang di artikel */
+            height: auto; /* Proporsi gambar tetap terjaga */
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #bdc3c7;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        aside ul li a:hover {
+            color: #3498db;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blog Pribadi Saya</h1>
+        <nav>
+            <a href="#">Beranda</a> | 
+            <a href="#">Tentang Saya</a> | 
+            <a href="#">Kategori</a> | 
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian artikel utama -->
+        <article>
+            <section>
+                <h2>Perjalanan di Bali</h2>
+                <p><strong>Diposting pada:</strong> 12 September 2024</p>
+                <img src="./src/asset/bali.webp" alt="Perjalanan di Bali">
+                <p>
+                    Perjalanan ke Bali kali ini sungguh mengesankan. Saya mengunjungi pantai-pantai indah, menikmati suasana alam, 
+                    dan belajar tentang budaya lokal. Sebagai tujuan wisata yang terkenal, Bali selalu menawarkan pengalaman yang luar biasa.
+                </p>
+                <a href="#">Baca lebih lanjut</a>
+            </section>
+            
+            <section>
+                <h2>Menemukan Hobi Baru: Memasak</h2>
+                <p><strong>Diposting pada:</strong> 5 September 2024</p>
+                <img src="./src/asset/memasak.webp" alt="Memasak">
+                <p>
+                    Baru-baru ini saya menemukan kecintaan baru dalam memasak. Menjelajahi berbagai resep dari seluruh dunia membuat saya semakin bersemangat 
+                    setiap kali di dapur. Hobi ini mengajarkan saya tentang kesabaran dan kreativitas dalam menciptakan hidangan lezat.
+                </p>
+                <a href="#">Baca lebih lanjut</a>
+            </section>
+
+            <section>
+                <h2>Pikiran tentang Teknologi AI</h2>
+                <p><strong>Diposting pada:</strong> 30 Agustus 2024</p>
+                <img src="./src/asset/ai.webp" alt="Teknologi AI">
+                <p>
+                    Teknologi kecerdasan buatan (AI) telah berkembang pesat dalam beberapa tahun terakhir. Saya sangat tertarik dengan dampak yang akan ditimbulkannya 
+                    pada berbagai sektor, mulai dari bisnis hingga kehidupan sehari-hari. Namun, kita juga harus berhati-hati dengan potensi dampak negatifnya.
+                </p>
+                <a href="#">Baca lebih lanjut</a>
+            </section>
+        </article>
+
+        <!-- Sidebar untuk informasi tambahan -->
+        <aside>
+            <h3>Tentang Penulis</h3>
+            <img src="./src/asset/pp.webp" alt="Foto Penulis">
+            <p>
+                Halo, saya rifda, seorang penulis yang suka berbagi cerita pribadi, pengalaman perjalanan, dan pemikiran tentang teknologi.
+                Bergabunglah dengan saya untuk menjelajahi dunia melalui kata-kata saya.
+            </p>
+
+            <h3>Arsip</h3>
+            <ul>
+                <li><a href="#">September 2024</a></li>
+                <li><a href="#">Agustus 2024</a></li>
+                <li><a href="#">Juli 2024</a></li>
+            </ul>
+
+            <h3>Kategori</h3>
+            <ul>
+                <li><a href="#">Perjalanan</a></li>
+                <li><a href="#">Hobi</a></li>
+                <li><a href="#">Teknologi</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog Pribadi Saya. Semua hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+</body>
+</html>
